@@ -15,12 +15,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import include, path
+from django.http import JsonResponse
 from rest_framework import routers 
 from joblister.views import JobViewSet
+
+def health_check(request):
+    return JsonResponse({'status': 'healthy'})
 
 router = routers.DefaultRouter()
 router.register(r'jobs', JobViewSet, basename='job')
 
 urlpatterns = [
+    path('health/', health_check, name='health'),
     path('api/', include(router.urls)),
 ]

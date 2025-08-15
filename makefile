@@ -1,4 +1,4 @@
-.PHONY: build up test stop clean test-setup
+.PHONY: build up test stop clean
 
 build:
 	docker-compose build
@@ -6,14 +6,12 @@ build:
 up:
 	docker-compose up -d
 
-test-setup:
+test:
 	docker-compose down
-	docker-compose build
-	docker-compose up -d
-	sleep 15
-
-test: test-setup
-	docker-compose exec frontend npm run test:e2e
+	$(MAKE) clean
+	$(MAKE) build
+	docker-compose up -d backend db
+	docker-compose up test-frontend
 	docker-compose down
 
 stop:

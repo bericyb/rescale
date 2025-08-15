@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-j#l^ya9g#p*y5(m+8_-^%+ol(*7be&fl$sar7$@o$twl7j=7_+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['host.docker.internal', 'localhost', '127.0.0.1']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
