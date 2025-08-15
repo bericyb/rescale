@@ -1,4 +1,4 @@
-# Rescale Take Home Assignment
+# Rescale
 
 To run this project
 ```
