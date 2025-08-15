@@ -1,5 +1,21 @@
 # Rescale Take Home Assignment
 
+To run this project
+```
+# Clone the repository
+git clone
+
+# Navigate to the project directory
+cd rescale
+
+# Start stack with tests 
+make test
+
+```
+
+Make test will start the backend and a test frontend service that executes the playwright tests.
+After the tests are completed, frontend container will be spun up and you can access the application with the test data at [http://localhost:3000](http://localhost:3000).
+
 ## Performance Considerations
 While writing this code, the primary focus on performance was surrounding the handling of large datasets in the frontend specifically.
 
