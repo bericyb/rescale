@@ -11,7 +11,9 @@ The only real backend optimization was the use of was the connection pooling in 
 
 ## AI Usage
 For this project, I used OpenCode an opensource project similar to ClaudeCode with Claude Sonnet 4 but with LSP support.
-I only used it after familiarizing myself with django and setting up the dependencies that I wanted. Along the way, if there were small stylistic changes or errors I would fix them myself.
+I only used AI after familiarizing myself with django and setting up the dependencies that I wanted. Along the way, if there were small stylistic changes or errors I would fix them myself.
+
+My approach to prompt engineering is to be consistent with managing the context window and to extensively use the planning mode to prevent edits that I would not approve. 
 Here are the sessions for implementing the different parts of the project: 
 
 (Implmenting cursor pagination using django-rest-framework)[https://opencode.ai/s/yQmaISIu]
