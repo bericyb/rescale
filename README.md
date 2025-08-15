@@ -1,4 +1,4 @@
-# Rescale
+# Rescale Job Board
 
 To run this project
 ```
