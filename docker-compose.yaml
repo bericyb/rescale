@@ -20,6 +20,7 @@ services:
       target: test
     environment:
       - NEXT_PUBLIC_API_URL=http://host.docker.internal:8000/api
+      - DOCKER=true
     ports:
       - "3001:3000"
     depends_on:

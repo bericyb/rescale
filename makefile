@@ -12,7 +12,7 @@ test:
 	$(MAKE) build
 	docker-compose up -d backend db
 	docker-compose up test-frontend
-	docker-compose down
+	docker-compose up frontend
 
 stop:
 	docker-compose stop

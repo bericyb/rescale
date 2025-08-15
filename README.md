@@ -13,6 +13,10 @@ The only real backend optimization was the use of was the connection pooling in 
 For this project, I used OpenCode an opensource project similar to ClaudeCode with Claude Sonnet 4 but with LSP support.
 I only used it after familiarizing myself with django and setting up the dependencies that I wanted. Along the way, if there were small stylistic changes or errors I would fix them myself.
 Here are the sessions for implementing the different parts of the project: 
+
 (Implmenting cursor pagination using django-rest-framework)[https://opencode.ai/s/yQmaISIu]
+
 (Implementing the frontend CRUD operation UIs for jobs)[https://opencode.ai/s/RUZXe8N5]
 
+AI Got a ton of things right, especially surrounding the frontend implementation. 
+Where it really struggled was with the playwright tests and getting them to work in docker. I had to fix a lot of the issues myself. Many of the issues were related to the different ways browser engines handle clicks through automation and network problems within docker that the AI could not figure out. 
